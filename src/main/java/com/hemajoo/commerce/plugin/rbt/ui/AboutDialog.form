@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.hemajoo.commerce.plugin.rbt.ui.AboutDialog">
+  <grid id="27dc6" binding="panelMain" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="658" height="500"/>
+    </constraints>
+    <properties>
+      <enabled value="true"/>
+      <minimumSize width="500" height="500"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="d690d" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <vspacer id="fb5af">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="658c4" class="javax.swing.JLabel" binding="htmlContent">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <text value="&lt;html&gt;&#10;&lt;br&gt;&lt;br&gt;&#10;&lt;hr&gt;&#10;&lt;h2&gt;&lt;span style=&quot;color:#aab7b8&quot;&gt;Plugin Information&lt;/span&gt;&lt;/h2&gt;&#10;&lt;ul&gt;&#10;&lt;li&gt;&lt;b&gt;Author: Resse Christophe&lt;/b&gt;&lt;/li&gt;&lt;br&gt;&#10;&lt;li&gt;&lt;b&gt;Version: 1.2&lt;/b&gt;&lt;/li&gt;&lt;br&gt;&#10;&lt;li&gt;&lt;b&gt;Release Date: 15/12/2020&lt;/b&gt;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;&lt;br&gt;&#10;&lt;hr&gt;&#10;&lt;h2&gt;&lt;span style=&quot;color:#aab7b8&quot;&gt;Purpose&lt;/span&gt;&lt;/h2&gt;&#10;&lt;b&gt;Mass translate you resource bundle files in one mouse click in more than 100 languages using the free Google Translate API.&lt;/b&gt;&#10;&lt;br&gt;&lt;br&gt;&#10;&lt;hr&gt;&#10;&lt;h2&gt;&lt;span style=&quot;color:#aab7b8&quot;&gt;Useful links&lt;/span&gt;&lt;/h2&gt;&#10;&lt;span style=&quot;color:#3498db&quot;&gt;&lt;b&gt;Rate and review plugin: https://plugins.jetbrains.com&lt;/b&gt;&lt;/span&gt;&#10;&lt;br&gt;&#10;&lt;span style=&quot;color:#3498db&quot;&gt;&lt;b&gt;Report bugs and request features: https://gitlab.com/resse-christophe/ticketing/resource-bundle-translator/-/issues\&lt;/b&gt;&lt;/span&gt;&#10;&lt;br&gt;&#10;&lt;br&gt;&#10;&lt;hr&gt;&#10;&lt;h2&gt;&lt;span style=&quot;color:#aab7b8&quot;&gt;Donate&lt;/span&gt;&lt;/h2&gt;&#10;&lt;b&gt;If you like this plugin, consider donating a few bucks, it will help me invest more time to implement new features.&lt;/b&gt;&#10;&lt;br&gt;&#10;&lt;b&gt;Ripple: rBbwrEwkwLmGxnmv1TtCpV7zLTapJEQHPp&lt;/b&gt;&#10;&lt;html&gt;"/>
+            </properties>
+          </component>
+          <grid id="36f84" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="3625d" class="javax.swing.JLabel" binding="pluginIcon">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentX value="1.0"/>
+                  <icon value="icons/RBT.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <grid id="525b9" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="1" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="1" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="e19ac" class="javax.swing.JLabel" binding="htmlTitle">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.0"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="&lt;html&gt;&lt;h1&gt;&lt;span style=&quot;color:#039be5&quot;&gt;&lt;b&gt;Resource Bundle Translator v1.2&lt;/b&gt;&lt;/span&gt;&lt;/h1&gt;&lt;/html&gt;"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

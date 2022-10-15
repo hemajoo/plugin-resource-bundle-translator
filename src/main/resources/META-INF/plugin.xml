@@ -1,0 +1,54 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.hemajoo.commerce.plugin.i18n-translator</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>I18n Translator</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="christophe.resse@gmail.com" url="https://www.github.com/hemajoo">Hemajoo Ltd.</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.properties</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Translator" secondary="true" icon="Icons.TranslateToolbarIcon" anchor="right" factoryClass="com.hemajoo.commerce.plugin.rbt.ui.RBTToolWindowFactory"/>
+        <notificationGroup id="Custom Notification Group" displayType="BALLOON"/>
+    </extensions>
+
+    <actions>
+
+        <group id="plugin.rbt.group"/>
+
+        <action id="RBTAutoTranslate"
+                class="com.hemajoo.commerce.plugin.rbt.action.ActionActivate" text="Translate Selected Properties Files"
+                description="Translate selected target properties files" icon="Icons.TranslateToolbarIcon2">
+            <add-to-group group-id="plugin.rbt.group" anchor="first"/>
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+            <add-to-group group-id="ProjectViewPopupMenu" relative-to-action="CutCopyPasteGroup" anchor="before"/>
+        </action>
+
+        <action id="ActionI18nClearAll"
+                class="com.hemajoo.commerce.plugin.rbt.action.ActionUnselectAll" text="Clear Selected Target Properties Files"
+                description="Clear selected target properties files" icon="Icons.TranslateToolbarIcon">
+            <add-to-group group-id="plugin.rbt.group" anchor="first"/>
+        </action>
+
+    </actions>
+
+
+</idea-plugin>
